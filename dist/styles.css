@@ -46,11 +46,41 @@ main{
   -webkit-box-direction:normal;
       -ms-flex-direction:column;
           flex-direction:column; }
+  @media screen and (min-width:480px){
+    main{
+      -webkit-box-orient:horizontal;
+      -webkit-box-direction:normal;
+          -ms-flex-direction:row;
+              flex-direction:row;
+      -ms-flex-wrap:wrap;
+          flex-wrap:wrap;
+      -webkit-box-pack:justify;
+          -ms-flex-pack:justify;
+              justify-content:space-between; } }
 
-.filter{
+.filter__img{
+  width:100%;
+  height:100%;
   background:url('../dist/assets/img/kevin-frayer.jpg?1578e14b738');
   background-size:100% 100%;
-  background-repeat:no-repeat;
+  background-repeat:no-repeat; }
+
+.filter{
   width:100%;
   height:20em;
   margin-bottom:1em; }
+  @media screen and (min-width:480px){
+    .filter{
+      width:calc(50% - .5em);
+      height:15em; } }
+  @media screen and (min-width:1025px){
+    .filter{
+      width:calc(33.33% - .5em); } }
+  .filter__title{
+    position:absolute;
+    margin:0;
+    color:#fff;
+    z-index:1; }
+  .filter-blur{
+    -webkit-filter:blur(2px);
+            filter:blur(2px); }
