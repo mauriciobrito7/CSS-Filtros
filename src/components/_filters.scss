@@ -49,7 +49,50 @@ main{
 	}
 
 	&-blur{
-		//Pasar en px
+		//pasar unidades en sepia
 		filter:blur(2px);	
+	}
+	&-sepia{
+		//pasar un porcentaje
+		filter:sepia(100%);
+	}
+	&-invert{
+		//pasar un porcentaje
+		filter:invert(100%);
+	}
+	&-hue-rotate{
+		//rotacion de color 
+		//pasar grados de rotacion
+		filter:hue-rotate(90deg);
+	}
+	&-opacity{
+		//pasar un porcentaje
+		filter: opacity(50%);
+	}
+	&-grayscale{
+		//pasar un porcentaje
+		filter:grayscale(100%);
+	}
+	&-brightness{
+		//pasar un número con decimales
+		filter:brightness(0.4);
+	}
+	&-contrast{
+		//pasar un número con decimales
+		filter:contrast(2);
+	}
+	&-saturate{
+		//pasar un número con decimales
+		filter:saturate(3);
+	}
+	&-efectos{
+		filter: blur(1px) grayscale(100%);
+	}
+	&-efectos:hover{
+		filter: contrast(1);
+	}
+	&-efectos-combinados{
+		filter: contrast(5)
+				blur(4px);
 	}
 }

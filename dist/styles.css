@@ -9,7 +9,9 @@ html{
 body{
   margin:0;
   font-family:Lato,"sans-serif";
-  line-height:1.6; }
+  line-height:1.6;
+  background-image:-webkit-linear-gradient(45deg,rgba(194,233,221,.5) 1%,rgba(104,119,132,.5)),-webkit-linear-gradient(135deg,#494d71,hsla(77,47%,81%,.5) 80%);
+  background-image:linear-gradient(45deg,rgba(194,233,221,.5) 1%,rgba(104,119,132,.5)),linear-gradient(-45deg,#494d71,hsla(77,47%,81%,.5) 80%); }
 
 h1,h2,h3,h4,h5,h6{
   font-family:Montserrat,"sans-serif"; }
@@ -84,3 +86,36 @@ main{
   .filter-blur{
     -webkit-filter:blur(2px);
             filter:blur(2px); }
+  .filter-sepia{
+    -webkit-filter:sepia(100%);
+            filter:sepia(100%); }
+  .filter-invert{
+    -webkit-filter:invert(100%);
+            filter:invert(100%); }
+  .filter-hue-rotate{
+    -webkit-filter:hue-rotate(90deg);
+            filter:hue-rotate(90deg); }
+  .filter-opacity{
+    -webkit-filter:opacity(50%);
+            filter:opacity(50%); }
+  .filter-grayscale{
+    -webkit-filter:grayscale(100%);
+            filter:grayscale(100%); }
+  .filter-brightness{
+    -webkit-filter:brightness(.4);
+            filter:brightness(.4); }
+  .filter-contrast{
+    -webkit-filter:contrast(2);
+            filter:contrast(2); }
+  .filter-saturate{
+    -webkit-filter:saturate(3);
+            filter:saturate(3); }
+  .filter-efectos{
+    -webkit-filter:blur(1px) grayscale(100%);
+            filter:blur(1px) grayscale(100%); }
+  .filter-efectos:hover{
+    -webkit-filter:contrast(1);
+            filter:contrast(1); }
+  .filter-efectos-combinados{
+    -webkit-filter:contrast(5) blur(4px);
+            filter:contrast(5) blur(4px); }
